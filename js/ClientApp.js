@@ -1,5 +1,3 @@
-/* global React ReactDOM */
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 
@@ -14,7 +12,6 @@ var myFirstComponent = (
     MyTitleFactory({title: 'Props are great', color: 'purple'}),
     React.createElement(MyTitle, {title: 'User props', color: 'mediumaquamarine'}),
     ce(MyTitle, {title: 'The bestttt', color: 'peru'})
-
   )
 );
 
