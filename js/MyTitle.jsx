@@ -1,18 +1,18 @@
-var React = require('react');
+const React = require('react')
+const div = React.DOM.div
+const h1 = React.DOM.h1
 
-var div = React.DOM.div;
-var h1 = React.DOM.h1;
-
-var MyTitle = React.createClass({
+const MyTitle = React.createClass({
   render () {
-    const style = {color : this.props.color};
+    const style = {color: this.props.color}
     return (
       <div>
-        <h1 style = {style}> {this.props.title}</h1>
+        <h1 style={ style }>
+          {this.props.title}
+        </h1>
       </div>
-    );
+    )
   }
+})
 
-});
-
-module.exports = MyTitle;
+module.exports = MyTitle
