@@ -1,12 +1,18 @@
 const React = require('react')
-const shows = require('../public/data')
+const data = require('../public/data')
+
+const ShowCard = require('./ShowCard')
 
 const Search = () => (
-  <pre>
-    <code>
-      {JSON.stringify(shows, null, 4)}
-    </code>
-  </pre>
+  <div className="container">
+    <div className="shows">
+      {
+        data.shows.map((show) => (
+          <ShowCard show={show} key={show.imdbID} />
+        ))
+      }
+    </div>
+  </div>
 )
 
 module.exports = Search
